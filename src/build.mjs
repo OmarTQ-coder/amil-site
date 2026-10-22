@@ -186,8 +186,6 @@ function termsFromOwnerText() {
     if (line.startsWith('[ملاحظة')) continue;                 // a note to the owner, not part of the terms
     if (!title) { title = line; continue; }
     if (line.startsWith('آخر تحديث')) { updated = line; continue; }
-    // §22 is cut off in the owner's text after "ما لم". Until the owner sends the rest, end the sentence before it.
-    line = line.replace(/،?\s*ما لم$/, '.');
     const h = line.match(/^(\d+)\.\s+(.+)$/);
     if (h) {
       close();
