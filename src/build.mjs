@@ -46,10 +46,10 @@ const L = {
   en: {
     dir: 'ltr', base: '/en/', other: 'ar', otherLabel: 'العربية', skip: 'Skip to content',
     nav: { support: 'Support', privacy: 'Privacy', terms: 'Terms' },
-    home: 'Aamel home',
+    home: 'Amil home',
     legal: 'A connecting platform only; it does not supply labour. <span lang="ar" dir="rtl">(منصة ربط فقط، لا توفّر العمالة)</span>',
-    company: '© 2026 Aamel (عامل). <span class="todo">Company legal name and Commercial Registration number to be added once issued</span>',
-    siteName: 'Aamel',
+    company: '© 2026 Amil (عامل). <span class="todo">Company legal name and Commercial Registration number to be added once issued</span>',
+    siteName: 'Amil',
   },
 };
 
@@ -68,10 +68,10 @@ const content = {
     terms: { title: 'الشروط والأحكام | عامل', desc: 'الشروط والأحكام لاستخدام منصة عامل.', body: termsFromOwnerText() },
   },
   en: {
-    home: { title: 'Aamel | How many hours do you need?', desc: 'Book a person by the hour for moving, cleaning and garden work in Saudi Arabia. The full price shows before you confirm.', body: read(join(src, 'content', 'en-home.html')) },
-    support: { title: 'Support | Aamel', desc: 'Contact Aamel support, common questions, and how to delete your account.', body: read(join(src, 'content', 'en-support.html')) },
-    privacy: { title: 'Privacy Policy | Aamel', desc: 'How Aamel collects, uses and protects your personal data, and your rights under the Saudi Personal Data Protection Law.', body: read(join(src, 'content', 'en-privacy.html')) },
-    terms: { title: 'Terms and Conditions | Aamel', desc: 'The terms and conditions for using the Aamel platform (English translation).', body: read(join(src, 'content', 'en-terms.html')) },
+    home: { title: 'Amil | How many hours do you need?', desc: 'Book a person by the hour for moving, cleaning and garden work in Saudi Arabia. The full price shows before you confirm.', body: read(join(src, 'content', 'en-home.html')) },
+    support: { title: 'Support | Amil', desc: 'Contact Amil support, common questions, and how to delete your account.', body: read(join(src, 'content', 'en-support.html')) },
+    privacy: { title: 'Privacy Policy | Amil', desc: 'How Amil collects, uses and protects your personal data, and your rights under the Saudi Personal Data Protection Law.', body: read(join(src, 'content', 'en-privacy.html')) },
+    terms: { title: 'Terms and Conditions | Amil', desc: 'The terms and conditions for using the Amil platform (English translation).', body: read(join(src, 'content', 'en-terms.html')) },
   },
 };
 
@@ -149,7 +149,7 @@ ${c.body.trim()}
 }
 
 function wordmark(lang) {
-  return `<picture><source srcset="/assets/wordmark-dark.svg" media="(prefers-color-scheme: dark)"><img src="/assets/wordmark.svg" alt="${lang === 'ar' ? 'عامل' : 'Aamel'}" width="77" height="64"></picture>`;
+  return `<picture><source srcset="/assets/wordmark-dark.svg" media="(prefers-color-scheme: dark)"><img src="/assets/wordmark.svg" alt="${lang === 'ar' ? 'عامل' : 'Amil'}" width="77" height="64"></picture>`;
 }
 
 function notFound() {
